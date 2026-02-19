@@ -1,0 +1,172 @@
+/* Reset básico: quita márgenes y paddings por defecto */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f8f9fa;   /* fondo gris muy claro */
+    color: #333;
+    line-height: 1.5;
+}
+
+/* 1. Barra de navegación (Punto 1) */
+.navbar {
+    display: flex;                    /* activa flexbox */
+    justify-content: space-between;   /* logo izquierda, menú derecha */
+    align-items: center;              /* centra verticalmente */
+    background-color: #2c3e50;        /* azul oscuro */
+    color: white;
+    padding: 15px 30px;
+}
+
+.navbar__logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.menu {
+    display: flex;                    /* links en fila horizontal */
+    list-style: none;                 /* quita los puntos de la lista */
+}
+
+.menu__item {
+    margin-left: 30px;                /* espacio entre cada link */
+}
+
+.menu__link {
+    color: white;
+    text-decoration: none;            /* sin subrayado */
+    font-size: 18px;
+}
+
+.menu__link:hover {
+    color: #18bc9c;                   /* verde turquesa al pasar mouse */
+}
+
+/* 2. Tarjeta de producto (Punto 2) */
+.product-card {
+    width: 320px;                     /* ancho fijo, no muy grande */
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;                 /* para que la imagen respete los bordes redondeados */
+    margin: 30px auto;                /* centra la tarjeta en la página */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);  /* sombra suave */
+}
+
+.product-card__image {
+    width: 100%;
+    height: 200px;                    /* altura fija para que quede uniforme */
+    object-fit: cover;                /* la imagen llena el espacio sin deformarse */
+}
+
+.product-card__content {
+    padding: 15px;
+    text-align: center;
+}
+
+.product-card__content h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.product-card__content p {
+    color: #666;
+    margin-bottom: 12px;
+}
+
+.product-card__price {
+    font-size: 24px;
+    color: #e74c3c;                   /* rojo para destacar precio */
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.product-card__button {
+    background-color: #27ae60;        /* verde "comprar" */
+    color: white;
+    border: none;
+    padding: 12px;
+    width: 100%;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.product-card__button:hover {
+    background-color: #219653;        /* verde más oscuro al pasar mouse */
+}
+
+/* 3. Galería de fotos (Punto 3) */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;                  /* las fotos bajan a la siguiente fila si no caben */
+    gap: 20px;                        /* espacio entre fotos */
+    justify-content: center;          /* centra las fotos horizontalmente */
+    margin: 30px 0;
+}
+
+.gallery__item {
+    width: 320px;                     /* tamaño medio, se ve bien en móvil y pc */
+    height: 220px;
+    object-fit: cover;                /* ajusta la imagen sin deformar */
+    border-radius: 8px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.12);
+}
+
+/* 4. Formulario de contacto (Punto 4) */
+.contact-form {
+    max-width: 550px;                 /* no muy ancho */
+    margin: 40px auto;                /* centra el formulario */
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form__row {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 25px;
+}
+
+.contact-form__field {
+    flex: 1;                          /* los dos campos (nombre y email) ocupan el mismo espacio */
+}
+
+.contact-form__field label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.contact-form__field input,
+.contact-form__field textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+.contact-form__field textarea {
+    resize: vertical;                 /* solo permite cambiar altura, no ancho */
+    min-height: 100px;
+}
+
+.contact-form__button {
+    background-color: #3498db;        /* azul bonito */
+    color: white;
+    border: none;
+    padding: 14px;
+    width: 100%;
+    font-size: 18px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.contact-form__button:hover {
+    background-color: #2980b9;        /* azul más oscuro */

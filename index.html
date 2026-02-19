@@ -1,11 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Guía En Equipo</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  
-</body>
-</html>
+  <!-- Punto 1 -->
+  <header class="navbar">
+    <div class="navbar__logo">Mi Sitio</div>
+    <nav class="navbar__menu">
+      <ul class="menu">
+        <li class="menu__item"><a href="#" class="menu__link">Inicio</a></li>
+        <li class="menu__item"><a href="#" class="menu__link">Acerca</a></li>
+        <li class="menu__item"><a href="#" class="menu__link">Servicios</a></li>
+        <li class="menu__item"><a href="#" class="menu__link">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <!-- Punto 2 -->
+    <section>
+      <h2>Tarjeta de producto</h2>
+      <div class="product-card">
+        <img src="imagenes/unnamed.jpg" alt="Auriculares Bose color beige"
+          class="product-card__image">
+        <div class="product-card__content">
+          <h3>Auriculares Inalámbricos</h3>
+          <p>Sonido bueno, mucha batería y cancelan ruido.</p>
+          <span class="product-card__price">$80.000</span>
+        </div>
+        <button class="product-card__button">Comprar</button>
+      </div>
+    </section>
+    <!-- Punto 3 -->
+    <section>
+      <h2>Galería de fotos</h2>
+      <div class="gallery">
+        <img src="imagenes/unnamed (3).jpg" alt="Montañas con niebla" class="gallery__item">
+        <img src="imagenes/unnamed (2).jpg" alt="Bosque verde en montaña" class="gallery__item">
+        <img src="imagenes/unnamed (1).jpg" alt="Paisaje de montaña con árboles"
+          class="gallery__item">
+      </div>
+    </section>
+    <!-- Punto 4 -->
+    <section>
+      <h2>Formulario de contacto</h2>
+      <form class="contact-form">
+        <div class="contact-form__row">
+          <div class="contact-form__field">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" placeholder="Escribe tu nombre">
+          </div>
+          <div class="contact-form__field">
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="tu@email.com">
+          </div>
+        </div>
+        <div class="contact-form__field">
+          <label for="mensaje">Mensaje:</label>
+          <textarea id="mensaje" rows="4" placeholder="Escribe aquí..."></textarea>
+        </div>
+        <button type="submit" class="contact-form__button">Enviar</button>
+      </form>
+    </section>
