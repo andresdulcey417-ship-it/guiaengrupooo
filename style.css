@@ -170,3 +170,65 @@
 
 .contact-form__button:hover {
     background-color: #2980b9;        /* azul más oscuro */
+}/* Títulos de sección (h2) */
+h2 {
+    text-align: center;
+    color: #2c3e50;
+    margin: 50px 0 25px;
+    font-size: 28px;
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* centra horizontalmente */
+  gap: 10px;
+  /* espacio entre ícono y texto */
+}
+
+.section-header .icono .h1 {
+  width: 80px;
+  height: 80px;
+}
+
+
+.task-list {
+  color: #f8f9fa;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* centra los ítems */
+  gap: 15px;
+  /* espacio uniforme entre ítems */
+}
+
+.task-list li {
+  background: #771111;
+  padding: 10px 20px;
+  border-radius: 5px;
+  width: 60%;
+  /* ancho uniforme */
+  text-align: center;
+}
+
+.testimonial {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  max-width: 600px;
+  margin: auto;
+}
+
+.testimonial .avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.testimonial .texto {
+  font-size: 16px;
+  line-height: 1.5;
+}
